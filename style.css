@@ -114,7 +114,6 @@ p {
 main {
   border-style: solid;
   border-color: rgb(var(--t), 0.2);
-  border-width: 0 1px 0 1px;
   width: 90%; /* Keep it responsive */
   max-width: 800px; /* Maintain max width */
   margin: 2rem auto; /* Centered and adjusted margins */
@@ -153,21 +152,23 @@ a {
 /* Media Query for Responsive Design */
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 3rem; /* Adjusted for smaller screens */
+    font-size: 3.5rem; /* Increased size for smaller screens */
   }
 
   p {
-    margin-bottom: 1rem; /* Reduced paragraph spacing */
+    margin-bottom: 1.5rem; /* Adjusted paragraph spacing */
+    font-size: 1.1rem; /* Increased font size for paragraphs */
   }
 
   .scroll {
-    font-size: 1rem; /* Slightly smaller scroll text */
-    bottom: 1rem; /* Adjust position */
-    right: 1rem; /* Adjust position */
+    font-size: 1.5rem; /* Slightly larger scroll text */
+    bottom: 3rem; /* More room for scrolling */
+    right: 2rem; /* Maintain position */
   }
 
   main {
     margin: 1rem; /* Reduced margin for smaller screens */
+    padding-bottom: 6rem; /* Added bottom padding for scrolling */
   }
 }
 
