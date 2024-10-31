@@ -3,7 +3,13 @@ body {
   background: #020202;
   cursor: crosshair;
 }
-canvas{display:block}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto; /* This ensures the canvas scales proportionately */
+}
+
 h1 {
   position: absolute;
   top: 20%;
@@ -11,8 +17,30 @@ h1 {
   transform: translate(-50%, -50%);
   color: #fff;
   font-family: "Source Sans Pro";
-  font-size: 3em;
+  font-size: 3em; /* Default size */
   font-weight: 900;
   -webkit-user-select: none;
   user-select: none;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em; /* Adjust font size for tablets and smaller devices */
+    top: 25%; /* Adjust position */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em; /* Further adjust font size for mobile devices */
+    top: 30%; /* Adjust position */
+  }
+
+  button {
+    font-size: 1.5em; /* Larger button for easy tapping */
+    padding: 10px 20px; /* Add some padding */
+    margin: 20px auto; /* Center button */
+    display: block; /* Make button block-level for centering */
+  }
 }
