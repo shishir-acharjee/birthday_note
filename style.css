@@ -30,21 +30,21 @@ p {
 }
 
 h1 {
-  font-size: 3rem; /* Adjusted for smaller screens */
+  font-size: 4rem; /* Maintain larger size */
   margin: 0 0 2rem 0;
   text-align: center;
 }
 
 p {
-  line-height: 1.5; /* Adjusted for better readability */
-  margin-bottom: 2rem; /* Adjusted margin */
+  line-height: 1.5; /* Maintain line height */
+  margin-bottom: 2rem; /* Keep spacing */
 }
 
 .scroll {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1rem; /* Adjusted size for smaller screens */
+  font-size: 1.2rem; /* Keep initial size */
   gap: 0.5rem;
   position: fixed;
   bottom: 2rem;
@@ -76,29 +76,27 @@ p {
 .rectangle:first-child {
   opacity: 1;
   transform: translateY(0);
-  background-color: rgba(var(--c), 1);
 }
 
-/* Adjusting rectangle widths for responsiveness */
 .rectangle:nth-child(1) {
-  width: 80px; /* Adjusted width */
-  height: 10px; /* Adjusted height */
+  width: 80px; 
+  height: 10px; 
 }
 .rectangle:nth-child(2) {
-  width: 60px; /* Adjusted width */
-  height: 8px; /* Adjusted height */
+  width: 60px; 
+  height: 8px; 
 }
 .rectangle:nth-child(3) {
-  width: 50px; /* Adjusted width */
-  height: 6px; /* Adjusted height */
+  width: 50px; 
+  height: 6px; 
 }
 .rectangle:nth-child(4) {
-  width: 40px; /* Adjusted width */
-  height: 5px; /* Adjusted height */
+  width: 40px; 
+  height: 5px; 
 }
 .rectangle:nth-child(5) {
-  width: 30px; /* Adjusted width */
-  height: 4px; /* Adjusted height */
+  width: 30px; 
+  height: 4px; 
 }
 .rectangle:nth-child(6) {
   width: 28px;
@@ -109,16 +107,16 @@ p {
   height: 3px;
 }
 .rectangle:nth-child(8) {
-  width: 20px; /* Adjusted width */
-  height: 2px; /* Adjusted height */
+  width: 20px; 
+  height: 2px; 
 }
 
 main {
   border-style: solid;
   border-color: rgb(var(--t), 0.2);
   border-width: 0 1px 0 1px;
-  width: 90%; /* Made it responsive */
-  max-width: 800px; /* Max width for larger screens */
+  width: 90%; /* Keep it responsive */
+  max-width: 800px; /* Maintain max width */
   margin: 2rem auto; /* Centered and adjusted margins */
   position: relative;
   display: flex;
@@ -144,7 +142,7 @@ main {
 
 article {
   position: relative;
-  margin: 2rem; /* Adjusted for better spacing */
+  margin: 2rem; /* Keep initial spacing */
 }
 
 a {
@@ -152,19 +150,24 @@ a {
   text-decoration: none;
 }
 
+/* Media Query for Responsive Design */
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 2.5rem; /* Further reduce size on small screens */
+    font-size: 3rem; /* Adjusted for smaller screens */
   }
 
   p {
-    margin-bottom: 1.5rem; /* Reduce paragraph spacing */
+    margin-bottom: 1rem; /* Reduced paragraph spacing */
   }
 
   .scroll {
-    font-size: 0.9rem; /* Smaller scroll text */
+    font-size: 1rem; /* Slightly smaller scroll text */
     bottom: 1rem; /* Adjust position */
     right: 1rem; /* Adjust position */
+  }
+
+  main {
+    margin: 1rem; /* Reduced margin for smaller screens */
   }
 }
 
