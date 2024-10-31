@@ -152,16 +152,16 @@ a {
 /* Media Query for Responsive Design */
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 3.5rem; /* Increased size for smaller screens */
+    font-size: 4rem; /* Increased size for smaller screens */
   }
 
   p {
     margin-bottom: 1.5rem; /* Adjusted paragraph spacing */
-    font-size: 1.1rem; /* Increased font size for paragraphs */
+    font-size: 1.3rem; /* Increased font size for paragraphs */
   }
 
   .scroll {
-    font-size: 1.5rem; /* Slightly larger scroll text */
+    font-size: 1.8rem; /* Larger scroll text */
     bottom: 3rem; /* More room for scrolling */
     right: 2rem; /* Maintain position */
   }
